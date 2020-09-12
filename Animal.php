@@ -1,20 +1,23 @@
 <?php
 
 class Animal {
-	public $hewan, $jumlah_kaki, $bisa_terbang, $suara;
+	public $jenis_hewan, $nama_hewan, $jumlah_kaki, $bisa_terbang, $suara;
 
 	function cetakHewan () {
-		return $this->hewan;
+		return $this->jenis_hewan;
 	}
 
-	function Hewan () {
-		return "Hewan Ini Adalah : ".$this ->hewan;
+	function jenisHewan () {
+		return "Hewan Ini Adalah : ".$this ->jenis_hewan;
+	}
+	function namaHewan () {
+		return "Hewan Ini Bernama : ".$this ->nama_hewan;
 	}
 	function jumlahKaki () {
 		return "Jumlah Kakinya Adalah : ".$this ->jumlah_kaki;
 	}
 	function bisaTerbang () {
-		return "JBisa Terbang : ".$this ->bisa_terbang;
+		return "Bisa Terbang : ".$this ->bisa_terbang;
 	}
 	function Suara () {
 		return "Suaranya Adalah : ".$this ->suara;
@@ -22,6 +25,9 @@ class Animal {
 }
 
 class Kucing extends Animal {
+	public function namaHewan () {
+		return "Kucing Ini Bernama Pumpkin";
+	}
 	public function jumlahKaki () {
 		return "Kucing Ini Memiliki Jumlah Kaki Sebanyak 4";
 	}
@@ -33,6 +39,9 @@ class Kucing extends Animal {
 	}
 }
 class Anjing extends Animal {
+	public function namaHewan () {
+		return "Anjing Ini Bernama Aiko";
+	}
 	public function jumlahKaki () {
 		return "Anjing Ini Memiliki Jumlah Kaki Sebanyak 4";
 	}
@@ -44,6 +53,9 @@ class Anjing extends Animal {
 	}
 }
 class Elang extends Animal {
+	public function namaHewan () {
+		return "Elang Ini Bernama Allegra";
+	}
 	public function jumlahKaki () {
 		return "Elang Ini Memiliki Jumlah Kaki Sebanyak 2";
 	}
@@ -55,6 +67,9 @@ class Elang extends Animal {
 	}
 }
 class Angsa extends Animal {
+	public function namaHewan () {
+		return "Angsa Ini Bernama Amber";
+	}
 	public function jumlahKaki () {
 		return "Angsa Ini Memiliki Jumlah Kaki Sebanyak 2";
 	}
@@ -68,12 +83,15 @@ class Angsa extends Animal {
 
 
 $kucing = new Kucing;
-$kucing->hewan = "Kucing";
+$kucing->jenis_hewan = "Kucing";
+$kucing->nama_hewan = "Pumpkin";
 $kucing->jumlah_kaki = "4";
 $kucing->bisa_terbang = "Tidak";
 $kucing->suara = "Meong meong meong";
 
-echo $kucing->Hewan();
+echo $kucing->jenisHewan();
+echo "<br>";
+echo $kucing->namaHewan();
 echo "<br>";
 echo $kucing->jumlahKaki();
 echo "<br>";
@@ -85,12 +103,15 @@ echo "<br>";
 echo "<hr>";
 
 $anjing = new Anjing;
-$anjing->hewan = "Anjing";
+$anjing->jenis_hewan = "Anjing";
+$anjing->nama_hewan = "Aiko";
 $anjing->jumlah_kaki = "4";
 $anjing->bisa_terbang = "Tidak";
 $anjing->suara = "Guukkk guukk guukkk";
 
-echo $anjing->Hewan();
+echo $anjing->jenisHewan();
+echo "<br>";
+echo $anjing->namaHewan();
 echo "<br>";
 echo $anjing->jumlahKaki();
 echo "<br>";
@@ -102,12 +123,15 @@ echo "<br>";
 echo "<hr>";
 
 $elang = new Elang;
-$elang->hewan = "Elang";
+$elang->jenis_hewan = "Elang";
+$elang->nama_hewan = "Allegra";
 $elang->jumlah_kaki = "2";
 $elang->bisa_terbang = "Bisa Terbang";
 $elang->suara = "Mmiiiippppppp";
 
-echo $elang->Hewan();
+echo $elang->jenisHewan();
+echo "<br>";
+echo $elang->namaHewan();
 echo "<br>";
 echo $elang->jumlahKaki();
 echo "<br>";
@@ -119,12 +143,15 @@ echo "<br>";
 echo "<hr>";
 
 $angsa = new Angsa;
-$angsa->hewan = "Angsa";
+$angsa->jenis_hewan = "Angsa";
+$angsa->nama_hewan = "Amber";
 $angsa->jumlah_kaki = "2";
 $angsa->bisa_terbang = "Bisa Terbang";
 $angsa->suara = "Kwwwaaaaakkkkkkkk";
 
-echo $angsa->Hewan();
+echo $angsa->jenisHewan();
+echo "<br>";
+echo $angsa->namaHewan();
 echo "<br>";
 echo $angsa->jumlahKaki();
 echo "<br>";
