@@ -1,136 +1,72 @@
 <?php
 
-class Animal {
-	public $hewan, $jumlah_kaki, $bisa_terbang, $suara;
+echo "Animal <br>";
+echo " <hr>";
 
-	function cetakHewan () {
-		return $this->hewan;
-	}
-
-	function Hewan () {
-		return "Hewan Ini Adalah : ".$this ->hewan;
-	}
-	function jumlahKaki () {
-		return "Jumlah Kakinya Adalah : ".$this ->jumlah_kaki;
-	}
-	function bisaTerbang () {
-		return "JBisa Terbang : ".$this ->bisa_terbang;
-	}
-	function Suara () {
-		return "Suaranya Adalah : ".$this ->suara;
-	}
+class Kucing {
+	public $nama, $jumlah_kaki, $bisa_terbang, $suara;
 }
-
-class Kucing extends Animal {
-	public function jumlahKaki () {
-		return "Kucing Ini Memiliki Jumlah Kaki Sebanyak 4";
-	}
-	public function bisaTerbang () {
-		return "Kucing Tidak Bisa Terbang";
-	}
-	public function suara () {
-		return "Suara Kucing : Meong meong meong";
-	}
-}
-class Anjing extends Animal {
-	public function jumlahKaki () {
-		return "Anjing Ini Memiliki Jumlah Kaki Sebanyak 4";
-	}
-	public function bisaTerbang () {
-		return "Anjing Tidak Bisa Terbang";
-	}
-	public function suara () {
-		return "Suara Anjing : Guukkk guukk guukkk";
-	}
-}
-class Elang extends Animal {
-	public function jumlahKaki () {
-		return "Elang Ini Memiliki Jumlah Kaki Sebanyak 2";
-	}
-	public function bisaTerbang () {
-		return "Elang Bisa Terbang";
-	}
-	public function suara () {
-		return "Suara Elang : Mmiiiippppppp";
-	}
-}
-class Angsa extends Animal {
-	public function jumlahKaki () {
-		return "Angsa Ini Memiliki Jumlah Kaki Sebanyak 2";
-	}
-	public function bisaTerbang () {
-		return "Angsa Bisa Terbang";
-	}
-	public function suara () {
-		return "Suara Angsa : Kwwwaaaaakkkkkkkk";
-	}
-}
-
 
 $kucing = new Kucing;
-$kucing->hewan = "Kucing";
+$kucing->nama = "Pumkin";
 $kucing->jumlah_kaki = "4";
 $kucing->bisa_terbang = "Tidak";
 $kucing->suara = "Meong meong meong";
 
-echo $kucing->Hewan();
-echo "<br>";
-echo $kucing->jumlahKaki();
-echo "<br>";
-echo $kucing->bisaTerbang();
-echo "<br>";
-echo $kucing->Suara();
-echo "<br>";
-
+echo "Kucing <br>";
+echo "Nama Kucing : $kucing->nama <br>";
+echo "Jumlah kakinya ada : $kucing->jumlah_kaki <br>";
+echo "Apakah bisa terbang : $kucing->bisa_terbang <br>";
+echo "Suaranya : $kucing->suara <br>";
 echo "<hr>";
 
+class Anjing {
+	public $nama, $jumlah_kaki, $bisa_terbang, $suara;
+}
+
 $anjing = new Anjing;
-$anjing->hewan = "Anjing";
+$anjing->nama = "Aiko";
 $anjing->jumlah_kaki = "4";
 $anjing->bisa_terbang = "Tidak";
 $anjing->suara = "Guukkk guukk guukkk";
 
-echo $anjing->Hewan();
-echo "<br>";
-echo $anjing->jumlahKaki();
-echo "<br>";
-echo $anjing->bisaTerbang();
-echo "<br>";
-echo $anjing->Suara();
-echo "<br>";
-
+echo "Anjing <br>";
+echo "Nama Anjing : $anjing->nama <br>";
+echo "Jumlah kakinya ada : $anjing->jumlah_kaki <br>";
+echo "Apakah bisa terbang : $anjing->bisa_terbang <br>";
+echo "Suaranya : $anjing->suara <br>";
 echo "<hr>";
 
+class Elang {
+	public $nama, $jumlah_kaki, $bisa_terbang, $suara;
+}
+
 $elang = new Elang;
-$elang->hewan = "Elang";
+$elang->nama = "Allegra";
 $elang->jumlah_kaki = "2";
 $elang->bisa_terbang = "Bisa Terbang";
 $elang->suara = "Mmiiiippppppp";
 
-echo $elang->Hewan();
-echo "<br>";
-echo $elang->jumlahKaki();
-echo "<br>";
-echo $elang->bisaTerbang();
-echo "<br>";
-echo $elang->Suara();
-echo "<br>";
-
+echo "Elang <br>";
+echo "Nama Elang : $elang->nama <br>";
+echo "Jumlah kakinya ada : $elang->jumlah_kaki <br>";
+echo "Apakah bisa terbang : $elang->bisa_terbang <br>";
+echo "Suaranya : $elang->suara <br>";
 echo "<hr>";
 
+class Angsa {
+	public $nama, $jumlah_kaki, $bisa_terbang, $suara;
+}
+
 $angsa = new Angsa;
-$angsa->hewan = "Angsa";
+$angsa->nama = "Aiko";
 $angsa->jumlah_kaki = "2";
 $angsa->bisa_terbang = "Bisa Terbang";
 $angsa->suara = "Kwwwaaaaakkkkkkkk";
 
-echo $angsa->Hewan();
-echo "<br>";
-echo $angsa->jumlahKaki();
-echo "<br>";
-echo $angsa->bisaTerbang();
-echo "<br>";
-echo $angsa->Suara();
-echo "<br>";
-
+echo "Angsa <br>";
+echo "Nama Angsa : $angsa->nama <br>";
+echo "Jumlah kakinya ada : $angsa->jumlah_kaki <br>";
+echo "Apakah bisa terbang : $angsa->bisa_terbang <br>";
+echo "Suaranya : $angsa->suara <br>";
 echo "<hr>";
